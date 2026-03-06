@@ -1,0 +1,57 @@
+# Python cache files
+
+**pycache**/
+*.pyc
+*.pyo
+
+# Virtual environment
+
+venv/
+env/
+.venv/
+
+# Environment variables
+
+.env
+
+# Jupyter notebook checkpoints
+
+.ipynb_checkpoints/
+
+# Logs
+
+*.log
+logs/
+
+# ML model files
+
+*.pkl
+*.joblib
+*.h5
+*.pt
+
+# Dataset files
+
+data/raw/
+data/processed/
+data/external/
+
+# Build files
+
+build/
+dist/
+*.egg-info/
+
+# IDE settings
+
+.vscode/
+.idea/
+
+# OS generated files
+
+.DS_Store
+Thumbs.db
+
+# Streamlit config
+
+.streamlit/

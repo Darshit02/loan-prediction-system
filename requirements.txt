@@ -1,0 +1,35 @@
+# Data Processing
+numpy
+pandas
+scipy
+
+# Machine Learning
+scikit-learn
+xgboost
+joblib
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Explainable AI
+shap
+
+# API Development
+fastapi
+uvicorn
+pydantic
+Dashboard
+streamlit
+
+# Config & Environment
+python-dotenv
+pyyaml
+
+# Testing
+pytest
+
+# Code Quality
+black
+flake8
