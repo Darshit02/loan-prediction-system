@@ -7,6 +7,7 @@ preprocessing = joblib.load("models/preprocessor.pkl")
 def predict_loan(data: dict):
 
     df = pd.DataFrame([data])
+    df["TotalIncome"] = df["ApplicantIncome"] + df["CoapplicantIncome"]
     processed_data = preprocessing.transform(df)
     prediction = model.predict(processed_data)
     return prediction[0]
