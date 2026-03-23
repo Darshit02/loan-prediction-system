@@ -1,0 +1,37 @@
+project:
+  name: loan_
+  version: 1.0
+  author: your_name
+data:
+  raw_data_path: data/raw/loan_data_set.csv
+  processed_data_path: data/processed/processed_data.csv
+  test_size: 0.2
+  random_state: 42
+features:
+  target_column: loan_status
+  numerical_features:
+    - income
+    - loan_amount
+    - credit_score
+    - age
+  categorical_features:
+    - gender
+    - employment_type
+    - property_area
+model:
+  name: xgboost
+  parameters:
+    n_estimators: 200
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+training:
+  batch_size: 32
+  epochs: 10
+  evaluation_metric: accuracy
+paths:
+  trained_model_path: models/model.pkl
+  logs_path: logs/
+api:
+  host: "0.0.0.0"
+  port: 8000

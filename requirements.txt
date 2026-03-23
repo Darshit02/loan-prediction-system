@@ -33,3 +33,6 @@ pytest
 # Code Quality
 black
 flake8
+
+#for experiment tracking and model versioning
+mlflow

@@ -55,3 +55,7 @@ Thumbs.db
 # Streamlit config
 
 .streamlit/
+
+# MLflow
+mlruns/
+mlflow.db
